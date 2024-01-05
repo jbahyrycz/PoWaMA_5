@@ -16,12 +16,12 @@ public class RatingController {
     }
 
     @GetMapping
-    public List<Rating> getTeachers()
+    public List<Rating> getRating()
     {
         return ratingService.getRating();
     }
     @PostMapping
-    public void addTeacher(@RequestBody Rating rating)
+    public void addRating(@RequestBody Rating rating)
     {
         ratingService.addRating(rating);
     }

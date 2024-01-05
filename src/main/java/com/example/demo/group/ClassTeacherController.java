@@ -27,7 +27,7 @@ private final ClassTeacherService classTeacherService;
         return classTeacherService.getTeachers((groupId));
     }
     @GetMapping(path="/{groupId}/fill")
-    public double getFill(@PathVariable("groupId") int groupId)
+    public String getFill(@PathVariable("groupId") int groupId)
     {
         return classTeacherService.getFill((groupId));
     }

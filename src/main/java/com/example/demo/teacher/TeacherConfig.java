@@ -16,7 +16,7 @@ public class TeacherConfig {
             Teacher b = new Teacher("Jan", "Kowalski", 8500.0, 1996, "present");
             Teacher c = new Teacher("Adam", "Nowak", 6400.0, 1998, "sick");
             Teacher d = new Teacher("Anna", "Rabarbar", 7000.0, 1997, "absent");
-            repository.saveAll(List.of(*a, b, c, d));
+            repository.saveAll(List.of(a, b, c, d));
         };
     }*/
 }

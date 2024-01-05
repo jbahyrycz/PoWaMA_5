@@ -8,7 +8,7 @@ import java.util.List;
 
 @Configuration
 public class ClassTeacherConfig {
-/*    @Bean
+    /*@Bean
     CommandLineRunner commandLineRunner(ClassTeacherRepository repository)
     {
         return args -> {

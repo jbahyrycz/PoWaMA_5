@@ -1,5 +1,4 @@
 "Teacher{id=1, fName='Julia', lName='Bahyrycz', salary=7000.0, year=2003, cond='present'}"
 "Teacher{id=2, fName='Jan', lName='Kowalski', salary=8500.0, year=1996, cond='present'}"
 "Teacher{id=3, fName='Adam', lName='Nowak', salary=6400.0, year=1998, cond='sick'}"
-"Teacher{id=4, fName='Anna', lName='Rabarbar', salary=7000.0, year=1997, cond='absent'}"
-"Teacher{id=5, fName='Katarzyna', lName='Wąs', salary=5000.0, year=1996, cond='present'}"
+"Teacher{id=5, fName='Marek', lName='Małysz', salary=10000.0, year=1986, cond='on delegation'}"

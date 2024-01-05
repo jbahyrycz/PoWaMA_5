@@ -50,7 +50,7 @@ public class ClassTeacherService {
         ClassTeacher classTeacher = classTeacherRepository.findById(classId).orElseThrow(() ->new IllegalStateException("no class"));
         return classTeacher.getTeachers();
     }
-    public double getFill(int classId)
+    public String getFill(int classId)
     {
         ClassTeacher classTeacher = classTeacherRepository.findById(classId).orElseThrow(() ->new IllegalStateException("no class"));
         int cnt = 0;
@@ -58,7 +58,9 @@ public class ClassTeacherService {
         {
             cnt++;
         }
-        return (double)cnt/(double)classTeacher.getMax();
+        double outputD = ((double)cnt/(double)classTeacher.getMax())*100.0;
+        String outputS = Double.toString(outputD) + '%';
+        return outputS;
     }
     public void addTeacher(int classId, Teacher teacher)
     {
