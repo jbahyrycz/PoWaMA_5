@@ -1,2 +1,7 @@
-# TeachersManager
-Homework for 5th classes of *Programming of window and mobile applications* subject. Backend for simple *Teachers Manager* app.
+# TeachersManagerBackend
+Homework for the 5th session of the *Programming of Windows and Mobile Applications* subject. A simple backend for managing teachers. Allows user to communicate with database to manage:
+- teachers,
+- groups,
+- rates.
+
+Written in Java and developed in IntelliJ IDEA. The project also utilizes the Spring Framework.
