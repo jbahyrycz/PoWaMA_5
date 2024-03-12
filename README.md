@@ -12,6 +12,7 @@ The backend provides several endpoints to interact with the database:
 - Add teacher: `POST http://localhost:8080/api/teacher`
   
   Example request:
+    ```json
     {
         "fName": "John",
         "lName": "Smith",
@@ -19,9 +20,11 @@ The backend provides several endpoints to interact with the database:
         "year": 1997,
         "cond": "present"
     }
+    ```
 - Edit teacher: `PUT http://localhost:8080/api/teacher/1`
   
   Example request:
+    ```json
     {
         "fName": "John",
         "lName": "Smith",
@@ -29,6 +32,7 @@ The backend provides several endpoints to interact with the database:
         "year": 1997,
         "cond": "sick"
     }
+    ```
 - Delete teacher: `DELETE http://localhost:8080/api/teacher/1`
 - Export teachers list to csv: `GET http://localhost:8080/api/teacher/csv`
 - List groups: `GET http://localhost:8080/api/group`
@@ -36,27 +40,33 @@ The backend provides several endpoints to interact with the database:
 - Add group: `POST http://localhost:8080/api/group`
   
   Example request:
+    ```json
     {
         "name": "English teachers",
         "max": 5,
         "teachers": [],
         "ratings": []
     }
+    ```
 - Get group fillng (%): `GET http://localhost:8080/api/group/1/fill`
 - Delete group: `DELETE http://localhost:8080/api/group/1`
 - List rates: `GET http://localhost:8080/api/rating`
 - Add rate: `POST http://localhost:8080/api/rating`
   
   Example request:
+    ```json
     {
         "rating": 5,
         "description": "Very good"
     }
+    ```
 - Edit rate: `PUT http://localhost:8080/api/rating/1`
   
   Example request: `PUT http://localhost:8080/api/rating/4`
+    ```json
     {
         "rating": 5,
         "description": "Excellent"
     }
+    ```
 - Delete rate: `DELETE http://localhost:8080/api/rating/1`
